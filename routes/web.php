@@ -18,15 +18,17 @@ use App\Http\Controllers\Admin\InstagramController;
 
 // Frontend Routes
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/servicos', function () {
-    return view('services.index');
+    $services = \App\Models\Service::where('is_active', true)->paginate(12);
+    return view('services.index', compact('services'));
 })->name('services.index');
 
 Route::get('/portfolio', function () {
-    return view('portfolio.index');
+    $portfolios = \App\Models\Portfolio::where('is_active', true)->paginate(12);
+    return view('portfolio.index', compact('portfolios'));
 })->name('portfolio.index');
 
 Route::get('/contato', function () {
@@ -56,5 +58,20 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     });
 });
 
-// Authentication Routes (if using Laravel Breeze or Fortify)
-// require __DIR__.'/auth.php';
+// Temporary auth routes for testing (remove in production)
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::post('/login', function (\Illuminate\Http\Request $request) {
+    if ($request->email === 'admin@example.com' && $request->password === 'password') {
+        session(['user_id' => 1]);
+        return redirect('/admin/dashboard');
+    }
+    return back()->withErrors(['email' => 'Credenciais inválidas']);
+});
+
+Route::post('/logout', function () {
+    session()->forget('user_id');
+    return redirect('/');
+})->name('logout');

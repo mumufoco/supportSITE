@@ -23,7 +23,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        return view('admin.services.create');
+        return view('admin.services.form');
     }
 
     /**
@@ -60,7 +60,7 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
-        return view('admin.services.edit', compact('service'));
+        return view('admin.services.form', compact('service'));
     }
 
     /**
