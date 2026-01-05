@@ -23,7 +23,7 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        return view('admin.portfolios.create');
+        return view('admin.portfolios.form');
     }
 
     /**
@@ -59,7 +59,7 @@ class PortfolioController extends Controller
      */
     public function edit(Portfolio $portfolio)
     {
-        return view('admin.portfolios.edit', compact('portfolio'));
+        return view('admin.portfolios.form', compact('portfolio'));
     }
 
     /**

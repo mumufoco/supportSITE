@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\PortfolioController;
 use App\Http\Controllers\Admin\InstagramController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +32,8 @@ Route::get('/portfolio', function () {
     return view('portfolio.index', compact('portfolios'));
 })->name('portfolio.index');
 
-Route::get('/contato', function () {
-    return view('contact.index');
-})->name('contact.index');
+Route::get('/contato', [ContactController::class, 'show'])->name('contact.show');
+Route::post('/contato', [ContactController::class, 'store'])->name('contact.store');
 
 // Admin Routes
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
