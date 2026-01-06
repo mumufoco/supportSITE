@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\PortfolioController;
 use App\Http\Controllers\Admin\InstagramController;
+use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\ContactController;
 
 /*
@@ -56,11 +57,18 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
         Route::patch('/{post}/toggle', [InstagramController::class, 'toggle'])->name('toggle');
         Route::delete('/{post}', [InstagramController::class, 'destroy'])->name('destroy');
     });
+
+    // Settings
+    Route::prefix('settings')->name('settings.')->group(function () {
+        Route::get('/', [SettingsController::class, 'edit'])->name('edit');
+        Route::put('/', [SettingsController::class, 'update'])->name('update');
+    });
 });
 
 // Temporary auth routes for testing (remove in production)
 Route::get('/login', function () {
-    return view('auth.login');
+    $settings = \App\Models\Setting::first() ?? \App\Models\Setting::create([]);
+    return view('auth.login', compact('settings'));
 })->name('login');
 
 Route::post('/login', function (\Illuminate\Http\Request $request) {
@@ -69,7 +77,7 @@ Route::post('/login', function (\Illuminate\Http\Request $request) {
         return redirect('/admin/dashboard');
     }
     return back()->withErrors(['email' => 'Credenciais inválidas']);
-});
+})->name('login.store');
 
 Route::post('/logout', function () {
     session()->forget('user_id');
