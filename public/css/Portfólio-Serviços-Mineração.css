@@ -1,0 +1,431 @@
+ .u-section-1 {
+  min-height: 0;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  width: 100%;
+  margin: 100px 0 0;
+}
+
+.u-section-1 .u-layout-cell-1 {
+  min-height: 600px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  margin-bottom: 0;
+  margin-top: 95px;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 39px 0 0;
+}
+
+.u-section-1 .u-text-3 {
+  margin: 20px 0 0;
+}
+
+.u-section-1 .u-image-1 {
+  min-height: 600px;
+  background-image: url("/images/61-Alta-scaled.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px;
+}
+
+@media (max-width: 1399px) {
+  .u-section-1 .u-text-2 {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 713px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 620px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 834px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 1200px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    min-height: 708px;
+  }
+} .u-section-2 {
+  min-height: 63px;
+}
+
+.u-section-2 .u-line-1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transform-origin: left center;
+} .u-section-3 {
+  filter: none;
+  background-image: url("/images/66-Alta-scaled.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.u-section-3 .u-sheet-1 {
+  min-height: 110px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 100px;
+  }
+} .u-section-4 {
+  min-height: 1059px;
+}
+
+.u-section-4 .u-layout-wrap-1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.u-section-4 .u-image-1 {
+  min-height: 1039px;
+  background-image: url("/images/67-Alta-scaled.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-4 .u-container-layout-1 {
+  padding: 0 0 0 30px;
+}
+
+.u-section-4 .u-layout-cell-2 {
+  min-height: 1039px;
+}
+
+.u-section-4 .u-container-layout-2 {
+  padding: 0;
+}
+
+.u-section-4 .u-text-1 {
+  margin: 16px 30px -14px;
+}
+
+@media (max-width: 1199px) {
+   .u-section-4 {
+    min-height: 1207px;
+  }
+
+  .u-section-4 .u-image-1 {
+    min-height: 857px;
+  }
+
+  .u-section-4 .u-layout-cell-2 {
+    min-height: 857px;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-4 {
+    min-height: 265px;
+  }
+
+  .u-section-4 .u-image-1 {
+    min-height: 656px;
+  }
+
+  .u-section-4 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-4 {
+    min-height: 465px;
+  }
+
+  .u-section-4 .u-image-1 {
+    min-height: 1736px;
+  }
+
+  .u-section-4 .u-container-layout-1 {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-4 .u-image-1 {
+    min-height: 1093px;
+  }
+} .u-section-5 {
+  min-height: 63px;
+}
+
+.u-section-5 .u-line-1 {
+  transform-origin: left center;
+  margin: 30px 0;
+}
+
+@media (max-width: 1399px) {
+  .u-section-5 .u-line-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+} .u-section-6 {
+  filter: none;
+  background-image: url("/images/66-Alta-scaled.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.u-section-6 .u-sheet-1 {
+  min-height: 110px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-6 .u-sheet-1 {
+    min-height: 100px;
+  }
+} .u-section-7 {
+  min-height: 520px;
+}
+
+.u-section-7 .u-layout-wrap-1 {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.u-section-7 .u-layout-cell-1 {
+  min-height: 400px;
+}
+
+.u-section-7 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-7 .u-text-1 {
+  margin: 0 30px;
+}
+
+.u-section-7 .u-image-1 {
+  min-height: 400px;
+  background-image: url("/images/63-Alta-1-scaled.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-7 .u-container-layout-2 {
+  padding: 0 30px 0 0;
+}
+
+@media (max-width: 1199px) {
+   .u-section-7 {
+    min-height: 432px;
+  }
+
+  .u-section-7 .u-layout-wrap-1 {
+    position: relative;
+  }
+
+  .u-section-7 .u-layout-cell-1 {
+    min-height: 330px;
+  }
+
+  .u-section-7 .u-text-1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-7 .u-image-1 {
+    min-height: 330px;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-7 {
+    min-height: 336px;
+  }
+
+  .u-section-7 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-section-7 .u-image-1 {
+    min-height: 253px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-7 {
+    min-height: 968px;
+  }
+
+  .u-section-7 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-7 .u-image-1 {
+    min-height: 380px;
+  }
+
+  .u-section-7 .u-container-layout-2 {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-7 {
+    min-height: 616px;
+  }
+
+  .u-section-7 .u-image-1 {
+    min-height: 239px;
+  }
+} .u-section-8 {
+  min-height: 63px;
+}
+
+.u-section-8 .u-line-1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transform-origin: left center;
+} .u-section-9 {
+  min-height: 0;
+}
+
+.u-section-9 .u-layout-wrap-1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-9 .u-image-1 {
+  min-height: 400px;
+  background-image: url("/images/63-Alta-1-scaled.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-9 .u-container-layout-1 {
+  padding: 0;
+}
+
+.u-section-9 .u-layout-cell-2 {
+  min-height: 1152px;
+}
+
+.u-section-9 .u-container-layout-2 {
+  padding: 0;
+}
+
+.u-section-9 .u-text-1 {
+  margin: 0 30px;
+}
+
+@media (max-width: 1199px) {
+   .u-section-9 {
+    min-height: 450px;
+  }
+
+  .u-section-9 .u-layout-wrap-1 {
+    position: relative;
+  }
+
+  .u-section-9 .u-image-1 {
+    min-height: 330px;
+  }
+
+  .u-section-9 .u-layout-cell-2 {
+    min-height: 950px;
+  }
+
+  .u-section-9 .u-text-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-9 {
+    min-height: 373px;
+  }
+
+  .u-section-9 .u-image-1 {
+    min-height: 253px;
+  }
+
+  .u-section-9 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-9 {
+    min-height: 600px;
+  }
+
+  .u-section-9 .u-image-1 {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-9 {
+    min-height: 459px;
+  }
+
+  .u-section-9 .u-image-1 {
+    min-height: 239px;
+  }
+} .u-section-10 {
+  filter: none;
+  background-image: url("/images/66-Alta-scaled.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.u-section-10 .u-sheet-1 {
+  min-height: 110px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-10 .u-sheet-1 {
+    min-height: 100px;
+  }
+}
