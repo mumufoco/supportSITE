@@ -1,0 +1,31 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 113px;
+}
+
+.u-section-1 .u-text-1 {
+  text-transform: uppercase;
+  margin: 30px auto;
+} .u-section-2 {
+  filter: none;
+}
+
+.u-section-2 .u-sheet-1 {
+  min-height: 410px;
+}
+
+.u-section-2 .u-image-1 {
+  filter: none;
+  width: 558px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-image-1 {
+    inset: auto;
+  }
+}.u-section-3 .u-sheet-1 {
+  min-height: 1059px;
+}
+
+.u-section-3 .u-text-1 {
+  margin: 0 0 60px;
+}
