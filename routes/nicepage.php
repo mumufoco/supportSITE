@@ -31,6 +31,7 @@ Route::prefix('pt')->name('pt.')->group(function () {
     Route::get('cisalhamento-direto', fn() => view('pt.cisalhamento-direto'))->name('cisalhamento-direto');
     Route::get('climatizacao', fn() => view('pt.climatizacao'))->name('climatizacao');
     Route::get('codigo-de-tica-e-conduta', fn() => view('pt.codigo-de-tica-e-conduta'))->name('codigo-de-tica-e-conduta');
+    Route::get('codigo-de-etica-e-conduta', fn() => view('pt.codigo-de-tica-e-conduta'))->name('codigo-de-etica-e-conduta');
     Route::get('combate-a-incendio', fn() => view('pt.combate-a-incendio'))->name('combate-a-incendio');
     Route::get('compactacao', fn() => view('pt.compactacao'))->name('compactacao');
     Route::get('concreto-armado', fn() => view('pt.concreto-armado'))->name('concreto-armado');
@@ -127,6 +128,7 @@ Route::prefix('en')->name('en.')->group(function () {
     Route::get('cisalhamento-direto', fn() => view('en.cisalhamento-direto'))->name('cisalhamento-direto');
     Route::get('climatizacao', fn() => view('en.climatizacao'))->name('climatizacao');
     Route::get('codigo-de-tica-e-conduta', fn() => view('en.codigo-de-tica-e-conduta'))->name('codigo-de-tica-e-conduta');
+    Route::get('codigo-de-etica-e-conduta', fn() => view('en.codigo-de-tica-e-conduta'))->name('codigo-de-etica-e-conduta');
     Route::get('combate-a-incendio', fn() => view('en.combate-a-incendio'))->name('combate-a-incendio');
     Route::get('compactacao', fn() => view('en.compactacao'))->name('compactacao');
     Route::get('concreto-armado', fn() => view('en.concreto-armado'))->name('concreto-armado');
@@ -223,6 +225,7 @@ Route::prefix('es')->name('es.')->group(function () {
     Route::get('cisalhamento-direto', fn() => view('es.cisalhamento-direto'))->name('cisalhamento-direto');
     Route::get('climatizacao', fn() => view('es.climatizacao'))->name('climatizacao');
     Route::get('codigo-de-tica-e-conduta', fn() => view('es.codigo-de-tica-e-conduta'))->name('codigo-de-tica-e-conduta');
+    Route::get('codigo-de-etica-e-conduta', fn() => view('es.codigo-de-tica-e-conduta'))->name('codigo-de-etica-e-conduta');
     Route::get('combate-a-incendio', fn() => view('es.combate-a-incendio'))->name('combate-a-incendio');
     Route::get('compactacao', fn() => view('es.compactacao'))->name('compactacao');
     Route::get('concreto-armado', fn() => view('es.concreto-armado'))->name('concreto-armado');
