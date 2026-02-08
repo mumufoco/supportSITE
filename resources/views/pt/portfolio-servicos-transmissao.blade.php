@@ -1,0 +1,621 @@
+@extends('layouts.nicepage')
+
+@section('lang', 'pt')
+@section('title', 'Portfólio Serviços Transmissão')
+@section('body-class', 'u-body u-clearfix u-xl-mode')
+
+@push('meta')
+    <meta name="keywords" content="​SUPPORT SOLO SONDAGENS, ​LABORATÓRIO:, ​GEOLOGIA E ENGENHARIA:, ​ELABORAÇÃO DE PROJETOS:">
+    <meta name="description" content="">
+    <meta name="generator" content="Nicepage 8.1.4, nicepage.com">
+    <meta name="theme-color" content="#a1c59a">
+    <meta property="og:title" content="Portfólio Serviços Transmissão">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+@endpush
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/nicepage.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/Portfólio-Serviços-Transmissão.css') }}" media="screen">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900">
+@endpush
+
+@section('content')
+<header class="u-clearfix u-header u-sticky u-sticky-53ac u-header" id="header"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <a href="/" data-page-id="351725170" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500" data-lang-pt="#" data-lang-en="#" data-lang-es="#">
+          <img src="{{ asset('images/9.png') }}" class="u-logo-image u-logo-image-1" title="HOME - Support Solo Sondagens">
+        </a>
+        <nav class="u-dropdown-icon u-menu u-menu-dropdown u-offcanvas u-menu-1" role="navigation" data-responsive-from="XS" data-position="Menu">
+          <div class="menu-collapse" style="font-size: 1.125rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+            <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-text-shadow u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-text-palette-2-base" href="#" tabindex="-1" aria-label="Open menu" aria-controls="8107">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul role="menubar" class="u-nav u-spacing-30 u-unstyled u-nav-1"><li role="none" class="u-nav-item"><a role="menuitem" class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" data-lang-pt="{&quot;content&quot;:&quot;SERVIÇOS&quot;}" data-lang-en="{&quot;content&quot;:&quot;SERVICES&quot;}" data-lang-es="{&quot;content&quot;:&quot;SERVICIOS&quot;}" style="padding: 10px 0px;">SERVIÇOS</a><div class="u-nav-popup"><ul role="menu" class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2" aria-label="SERVIÇOS menu"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="{{ route('pt.servicos-geologico') }}" data-lang-pt="{&quot;content&quot;:&quot;SERVIÇOS GEOLÓGICOS&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;GEOLOGICAL SERVICES&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SERVICIOS GEOLÓGICOS&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}">SERVIÇOS GEOLÓGICOS</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="{{ route('pt.servicos-laboratorial') }}" data-lang-pt="{&quot;content&quot;:&quot;SERVIÇOS LABORATORIAIS&quot;,&quot;href&quot;:&quot;Serviços-Laboratorial.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;LABORATORY SERVICES&quot;,&quot;href&quot;:&quot;Serviços-Laboratorial.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SERVICIOS LABORATORIALES&quot;,&quot;href&quot;:&quot;Serviços-Laboratorial.html&quot;}">SERVIÇOS LABORATORIAIS</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="{{ route('pt.sondagem-sondas-especiais') }}" data-lang-pt="{&quot;content&quot;:&quot;SONDAGEM ESPECIAIS&quot;,&quot;href&quot;:&quot;Sondagem-Sondas-Especiais.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;SPECIAL DRILLING&quot;,&quot;href&quot;:&quot;Sondagem-Sondas-Especiais.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SONDEO ESPECIALES&quot;,&quot;href&quot;:&quot;Sondagem-Sondas-Especiais.html&quot;}">SONDAGEM ESPECIAIS</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="{{ route('pt.servicos-elaboracao-projetos') }}" data-lang-pt="{&quot;content&quot;:&quot;SERVIÇOS ELABORARAÇÃO DE COMPLEMENTARES&quot;,&quot;href&quot;:&quot;Serviços-Elaboração-Projetos.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;SERVICES FOR DEVELOPING COMPLEMENTARIES&quot;,&quot;href&quot;:&quot;Serviços-Elaboração-Projetos.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SERVICIOS ELABORACIÓN DE COMPLEMENTARIOS&quot;,&quot;href&quot;:&quot;Serviços-Elaboração-Projetos.html&quot;}">SERVIÇOS ELABORARAÇÃO DE COMPLEMENTARES</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="{{ route('pt.servicos-fundacao-profunda') }}" data-lang-pt="{&quot;content&quot;:&quot;SERVIÇOS DE FUNDAÇÃO PROFUNDA&quot;,&quot;href&quot;:&quot;Serviços-Fundação-Profunda.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;DEEP FOUNDATION SERVICES&quot;,&quot;href&quot;:&quot;Serviços-Fundação-Profunda.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SERVICIOS DE FUNDACIÓN PROFUNDA&quot;,&quot;href&quot;:&quot;Serviços-Fundação-Profunda.html&quot;}">SERVIÇOS DE FUNDAÇÃO PROFUNDA</a>
+</li></ul>
+</div>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="{{ route('pt.servicos-geologico') }}" data-lang-pt="{&quot;content&quot;:&quot;PORTFÓLIOS&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;PORTFOLIOS&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;PORTFOLIOS&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}" style="padding: 10px 0px;">PORTFÓLIOS</a><div class="u-nav-popup"><ul role="menu" class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-3" aria-label="PORTFÓLIOS menu"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="{{ route('pt.portfolio-servicos-geologicos') }}" data-lang-pt="{&quot;content&quot;:&quot;PORTFÓLIO SOLO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Geológicos.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;SOIL PORTFOLIO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Geológicos.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;PORTFOLIO DE SUELO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Geológicos.html&quot;}">PORTFÓLIO SOLO</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="{{ route('pt.portfolio-servicos-mineracao') }}" data-lang-pt="{&quot;content&quot;:&quot;PORTFÓLIO MINERAÇÃO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Mineração.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;MINING PORTFOLIO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Mineração.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;PORTFOLIO DE MINERÍA&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Mineração.html&quot;}">PORTFÓLIO MINERAÇÃO</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="{{ route('pt.portfolio-servicos-transmissao') }}" data-lang-pt="{&quot;content&quot;:&quot;PORTFÓLIO TRANSMISSORAS&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Transmissão.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;TRANSMISSION PORTFOLIO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Transmissão.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;PORTFOLIO DE TRANSMISORAS&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Transmissão.html&quot;}">PORTFÓLIO TRANSMISSORAS</a>
+</li></ul>
+</div>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="https://app.supportsondagens.com.br/index.php/signin" target="_blank" data-lang-pt="{&quot;content&quot;:&quot;ÁREA DO CLIENTE&quot;,&quot;href&quot;:&quot;https://app.supportsondagens.com.br/index.php/signin&quot;}" data-lang-en="{&quot;content&quot;:&quot;CLIENT AREA&quot;,&quot;href&quot;:&quot;https://app.supportsondagens.com.br/index.php/signin&quot;}" data-lang-es="{&quot;content&quot;:&quot;ÁREA DEL CLIENTE&quot;,&quot;href&quot;:&quot;https://app.supportsondagens.com.br/index.php/signin&quot;}" style="padding: 10px 0px;">ÁREA DO CLIENTE</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="{{ route('pt.formulario-de-denuncia') }}" data-lang-pt="{&quot;content&quot;:&quot;DENÚNCIE&quot;,&quot;href&quot;:&quot;Formulario-de-Denúncia.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;REPORT&quot;,&quot;href&quot;:&quot;Formulario-de-Denúncia.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;DENUNCIA&quot;,&quot;href&quot;:&quot;Formulario-de-Denúncia.html&quot;}" style="padding: 10px 0px;">DENÚNCIE</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" data-lang-pt="{&quot;content&quot;:&quot;COLABORADORES&quot;}" data-lang-en="{&quot;content&quot;:&quot;COLLABORATORS&quot;}" data-lang-es="{&quot;content&quot;:&quot;COLABORADORES&quot;}" style="padding: 10px 0px;">COLABORADORES</a><div class="u-nav-popup"><ul role="menu" class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4" aria-label="COLABORADORES menu"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="https://www.spt.supportsondagens.com.br" target="_blank" data-lang-pt="{&quot;content&quot;:&quot;SISTEMA SONDAGEM&quot;}" data-lang-en="{&quot;content&quot;:&quot;DRILLING SYSTEM&quot;}" data-lang-es="{&quot;content&quot;:&quot;SISTEMA DE SONDEO&quot;}">SONDAGEM</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="https://www.sev.supportsondagens.com.br" target="_blank">SONDAGEM ELÉTRICA</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="https://www.sesmt.supportsondagens.com.br" target="_blank">CONTROLE MÉDICINA DO TRABALHO</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="https://www.ponto.supportsondagens.com.br" target="_blank" data-lang-pt="{&quot;content&quot;:&quot;PONTO ELETRÔNICO&quot;,&quot;href&quot;:&quot;https://www.ponto.supportsondagens.com.br&quot;}" data-lang-en="{&quot;content&quot;:&quot;ELECTRONIC POINT&quot;,&quot;href&quot;:&quot;https://www.ponto.supportsondagens.com.br&quot;}" data-lang-es="{&quot;content&quot;:&quot;PUNTO ELECTRÓNICO&quot;,&quot;href&quot;:&quot;https://www.ponto.supportsondagens.com.br&quot;}">PONTO ELETRÔNICO</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-1-base u-text-palette-2-base" href="https://www.webmail.supportsondagens.com.br" target="_blank" data-lang-pt="{&quot;content&quot;:&quot;WEBMAIL&quot;,&quot;href&quot;:&quot;https://www.webmail.supportsondagens.com.br&quot;}" data-lang-en="{&quot;content&quot;:&quot;WEBMAIL&quot;,&quot;href&quot;:&quot;https://www.webmail.supportsondagens.com.br&quot;}" data-lang-es="{&quot;content&quot;:&quot;CORREO ELECTRÓNICO&quot;,&quot;href&quot;:&quot;https://www.webmail.supportsondagens.com.br&quot;}">WEBMAIL</a>
+</li></ul>
+</div>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse" id="8107" role="region" aria-label="Menu panel">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close" tabindex="-1" aria-label="Close menu"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-5" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" data-lang-pt="{&quot;content&quot;:&quot;SERVIÇOS&quot;}" data-lang-en="{&quot;content&quot;:&quot;SERVICES&quot;}" data-lang-es="{&quot;content&quot;:&quot;SERVICIOS&quot;}">SERVIÇOS</a><div class="u-nav-popup"><ul role="menu" class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-6" aria-label="SERVIÇOS menu"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="{{ route('pt.servicos-geologico') }}" data-lang-pt="{&quot;content&quot;:&quot;SERVIÇOS GEOLÓGICOS&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;GEOLOGICAL SERVICES&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SERVICIOS GEOLÓGICOS&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}">SERVIÇOS GEOLÓGICOS</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="{{ route('pt.servicos-laboratorial') }}" data-lang-pt="{&quot;content&quot;:&quot;SERVIÇOS LABORATORIAIS&quot;,&quot;href&quot;:&quot;Serviços-Laboratorial.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;LABORATORY SERVICES&quot;,&quot;href&quot;:&quot;Serviços-Laboratorial.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SERVICIOS LABORATORIALES&quot;,&quot;href&quot;:&quot;Serviços-Laboratorial.html&quot;}">SERVIÇOS LABORATORIAIS</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="{{ route('pt.sondagem-sondas-especiais') }}" data-lang-pt="{&quot;content&quot;:&quot;SONDAGEM ESPECIAIS&quot;,&quot;href&quot;:&quot;Sondagem-Sondas-Especiais.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;SPECIAL DRILLING&quot;,&quot;href&quot;:&quot;Sondagem-Sondas-Especiais.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SONDEO ESPECIALES&quot;,&quot;href&quot;:&quot;Sondagem-Sondas-Especiais.html&quot;}">SONDAGEM ESPECIAIS</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="{{ route('pt.servicos-elaboracao-projetos') }}" data-lang-pt="{&quot;content&quot;:&quot;SERVIÇOS ELABORARAÇÃO DE COMPLEMENTARES&quot;,&quot;href&quot;:&quot;Serviços-Elaboração-Projetos.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;SERVICES FOR DEVELOPING COMPLEMENTARIES&quot;,&quot;href&quot;:&quot;Serviços-Elaboração-Projetos.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SERVICIOS ELABORACIÓN DE COMPLEMENTARIOS&quot;,&quot;href&quot;:&quot;Serviços-Elaboração-Projetos.html&quot;}">SERVIÇOS ELABORARAÇÃO DE COMPLEMENTARES</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="{{ route('pt.servicos-fundacao-profunda') }}" data-lang-pt="{&quot;content&quot;:&quot;SERVIÇOS DE FUNDAÇÃO PROFUNDA&quot;,&quot;href&quot;:&quot;Serviços-Fundação-Profunda.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;DEEP FOUNDATION SERVICES&quot;,&quot;href&quot;:&quot;Serviços-Fundação-Profunda.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SERVICIOS DE FUNDACIÓN PROFUNDA&quot;,&quot;href&quot;:&quot;Serviços-Fundação-Profunda.html&quot;}">SERVIÇOS DE FUNDAÇÃO PROFUNDA</a>
+</li></ul>
+</div>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="{{ route('pt.servicos-geologico') }}" data-lang-pt="{&quot;content&quot;:&quot;PORTFÓLIOS&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;PORTFOLIOS&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;PORTFOLIOS&quot;,&quot;href&quot;:&quot;Serviços-Geológico.html&quot;}">PORTFÓLIOS</a><div class="u-nav-popup"><ul role="menu" class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-7" aria-label="PORTFÓLIOS menu"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="{{ route('pt.portfolio-servicos-geologicos') }}" data-lang-pt="{&quot;content&quot;:&quot;PORTFÓLIO SOLO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Geológicos.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;SOIL PORTFOLIO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Geológicos.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;PORTFOLIO DE SUELO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Geológicos.html&quot;}">PORTFÓLIO SOLO</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="{{ route('pt.portfolio-servicos-mineracao') }}" data-lang-pt="{&quot;content&quot;:&quot;PORTFÓLIO MINERAÇÃO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Mineração.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;MINING PORTFOLIO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Mineração.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;PORTFOLIO DE MINERÍA&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Mineração.html&quot;}">PORTFÓLIO MINERAÇÃO</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="{{ route('pt.portfolio-servicos-transmissao') }}" data-lang-pt="{&quot;content&quot;:&quot;PORTFÓLIO TRANSMISSORAS&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Transmissão.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;TRANSMISSION PORTFOLIO&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Transmissão.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;PORTFOLIO DE TRANSMISORAS&quot;,&quot;href&quot;:&quot;Portfólio-Serviços-Transmissão.html&quot;}">PORTFÓLIO TRANSMISSORAS</a>
+</li></ul>
+</div>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="https://app.supportsondagens.com.br/index.php/signin" target="_blank" data-lang-pt="{&quot;content&quot;:&quot;ÁREA DO CLIENTE&quot;,&quot;href&quot;:&quot;https://app.supportsondagens.com.br/index.php/signin&quot;}" data-lang-en="{&quot;content&quot;:&quot;CLIENT AREA&quot;,&quot;href&quot;:&quot;https://app.supportsondagens.com.br/index.php/signin&quot;}" data-lang-es="{&quot;content&quot;:&quot;ÁREA DEL CLIENTE&quot;,&quot;href&quot;:&quot;https://app.supportsondagens.com.br/index.php/signin&quot;}">ÁREA DO CLIENTE</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="{{ route('pt.formulario-de-denuncia') }}" data-lang-pt="{&quot;content&quot;:&quot;DENÚNCIE&quot;,&quot;href&quot;:&quot;Formulario-de-Denúncia.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;REPORT&quot;,&quot;href&quot;:&quot;Formulario-de-Denúncia.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;DENUNCIA&quot;,&quot;href&quot;:&quot;Formulario-de-Denúncia.html&quot;}">DENÚNCIE</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" data-lang-pt="{&quot;content&quot;:&quot;COLABORADORES&quot;}" data-lang-en="{&quot;content&quot;:&quot;COLLABORATORS&quot;}" data-lang-es="{&quot;content&quot;:&quot;COLABORADORES&quot;}">COLABORADORES</a><div class="u-nav-popup"><ul role="menu" class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-8" aria-label="COLABORADORES menu"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="https://www.spt.supportsondagens.com.br" target="_blank" data-lang-pt="{&quot;content&quot;:&quot;SISTEMA SONDAGEM&quot;}" data-lang-en="{&quot;content&quot;:&quot;DRILLING SYSTEM&quot;}" data-lang-es="{&quot;content&quot;:&quot;SISTEMA DE SONDEO&quot;}">SONDAGEM</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link" href="https://www.sev.supportsondagens.com.br" target="_blank">SONDAGEM ELÉTRICA</a>
+</li><li role="none" class="u-nav-item"><a tabindex="-1" role="menuitem" class="u-button-style u-nav-link" href="https://www.sesmt.supportsondagens.com.br" target="_blank">CONTROLE MÉDICINA DO TRABALHO</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="https://www.ponto.supportsondagens.com.br" target="_blank" data-lang-pt="{&quot;content&quot;:&quot;PONTO ELETRÔNICO&quot;,&quot;href&quot;:&quot;https://www.ponto.supportsondagens.com.br&quot;}" data-lang-en="{&quot;content&quot;:&quot;ELECTRONIC POINT&quot;,&quot;href&quot;:&quot;https://www.ponto.supportsondagens.com.br&quot;}" data-lang-es="{&quot;content&quot;:&quot;PUNTO ELECTRÓNICO&quot;,&quot;href&quot;:&quot;https://www.ponto.supportsondagens.com.br&quot;}">PONTO ELETRÔNICO</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="https://www.webmail.supportsondagens.com.br" target="_blank" data-lang-pt="{&quot;content&quot;:&quot;WEBMAIL&quot;,&quot;href&quot;:&quot;https://www.webmail.supportsondagens.com.br&quot;}" data-lang-en="{&quot;content&quot;:&quot;WEBMAIL&quot;,&quot;href&quot;:&quot;https://www.webmail.supportsondagens.com.br&quot;}" data-lang-es="{&quot;content&quot;:&quot;CORREO ELECTRÓNICO&quot;,&quot;href&quot;:&quot;https://www.webmail.supportsondagens.com.br&quot;}">WEBMAIL</a>
+</li></ul>
+</div>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+          <style class="menu-style">@media (max-width: 539px) {
+                    [data-responsive-from="XS"] .u-nav-container {
+                        display: none;
+                    }
+                    [data-responsive-from="XS"] .menu-collapse {
+                        display: block;
+                    }
+                }</style>
+        </nav>
+        <div class="u-language u-language-content-icon-text u-language-layout-icons u-spacing-10 u-language-1">
+          <a class="u-language-top-url u-language-url u-text-black" data-lang-text="Português" href="{{ route('pt.portfolio-servicos-transmissao') }}" data-language="pt" style="background-image: none; text-transform: uppercase; font-size: 0.75rem;"><span class="u-file-icon u-icon u-language-icon u-language-pt u-icon-1"><img src="{{ asset('images/icone18.png') }}" alt=""></span>
+          </a>
+          <a class="u-language-top-url u-language-url u-text-black" data-lang-text="English" href="/en/Portfólio-Serviços-Transmissão.html" data-language="en" style="background-image: none; text-transform: uppercase; font-size: 0.75rem;"><span class="u-file-icon u-icon u-language-en u-language-icon u-icon-2"><img src="{{ asset('images/icone19.png') }}" alt=""></span>
+          </a>
+          <a class="u-language-top-url u-language-url u-text-black" data-lang-text="Español" href="/es/Portfólio-Serviços-Transmissão.html" data-language="es" style="background-image: none; text-transform: uppercase; font-size: 0.75rem;"><span class="u-file-icon u-icon u-language-es u-language-icon u-icon-3"><img src="{{ asset('images/icone20.png') }}" alt=""></span>
+          </a>
+        </div>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="block-2">
+      <div class="data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="skrollable u-align-center u-container-align-center u-container-style u-layout-cell u-parallax u-shape-rectangle u-size-30 u-layout-cell-1" data-image-width="2000" data-image-height="1333">
+              <div class="u-container-layout u-container-layout-1">
+                <h1 class="u-text u-text-default u-text-palette-1-base u-text-1"> SUPPORT SOLO SONDAGENS&nbsp;</h1>
+                <h4 class="u-text u-text-2"> ENGENHARIA DE SOLOS, ANÁLISE, ELABORAÇÃO PROJETOS E LABORATÓRIO DE SOLOS</h4>
+                <h5 class="u-text u-text-palette-1-base u-text-3">https://www.supportsondagens.com.br </h5>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="1920" data-image-height="1441">
+              <div class="u-container-layout u-container-layout-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-valign-middle-xl u-section-2" id="sec-da0a">
+      <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
+    </section>
+    <section class="u-clearfix u-section-3" id="block-9">
+      <p class="u-text u-text-1"> A&nbsp;<span style="font-weight: 700;">Support Solo Sondagens</span>&nbsp;é uma empresa especializada em investigações geotécnicas e geológicas de alta precisão. Fundada em 2015 e com foco estratégico em projetos de grande complexidade desde 2018, possuímos a expertise e a infraestrutura necessárias para ser o parceiro técnico confiável no desenvolvimento e na expansão do Sistema de Transmissão de Energia brasileiro.<br>Compreendemos que a&nbsp;confiabilidade da rede&nbsp;começa com a&nbsp;robustez das fundações. Nossa missão é fornecer dados subsuperficiais precisos e análises técnicas detalhadas que garantam a segurança, a economia e a viabilidade de projetos de linhas de transmissão e subestações, desde a fase de planejamento até a execução.<br>
+        <br><span style="font-weight: 700;">Serviços Aplicáveis à Transmissão de Energia:</span>
+        <br>
+        <br>Oferecemos um portfólio integrado de serviços, projetado para atender todas as etapas da investigação geotécnica no setor elétrico.<br>
+        <br><span style="font-weight: 700;">Investigação Geotécnica para Projetos de Fundações:</span>
+        <br>
+        <br><span style="font-weight: 700;">Sondagem a Percussão (SPT):</span> Executada conforme a norma ABNT NBR 6484, é fundamental para definir o perfil estratigráfico, o nível d’água e a capacidade de carga de solos para fundações rasas e profundas de torres e subestações.<br><span style="font-weight: 700;">Sondagem Rotativa:</span> Essencial para a caracterização de maciços rochosos, permitindo a obtenção de testemunhos para determinação do RQD (Rock Quality Designation), resistência da rocha e definição da cota de embutimento de fundações em estacas ou tubulões.<br><span style="font-weight: 700;">Sondagem Mista (Rotopercussão):</span> Combina eficiência e detalhamento para atravessar solos resistentes e rochas alteradas, comuns em terrenos brasileiros.<br>
+        <br><span style="font-weight: 700;">Ensaios de Campo e Monitoramento Especializados:</span>
+        <br>
+        <br><span style="font-weight: 700;">Ensaios de Penetração de Cone (CPT):</span> Fornece parâmetros contínuos e mais detalhados do solo (resistência, atrito, poropressão), ideal para projetos em solos homogêneos e análise de estabilidade.<br><span style="font-weight: 700;">Ensaios de Permeabilidade: </span>Cruciais para projetos de drenagem, contenções e análise de estabilidade de taludes em áreas de subestações e acessos.<br><span style="font-weight: 700;">Coleta de Amostras Indeformadas:</span> Para a realização de ensaios laboratoriais avançados de resistência e deformabilidade.<br>
+        <br><span style="font-weight: 700;">Laboratório de Solos e Rochas:</span>
+        <br>
+        <br>Ensaios de caracterização física (granulometria, limites de Atterberg).<br>Ensaios de resistência (cisalhamento direto, compressão simples em rochas).<br>Ensaios de compactação (Proctor Normal e Modificado) para controle de aterros e estruturas de terra.<br>
+        <br><span style="font-weight: 700;">Logística e Mobilidade para Acessar Qualquer Terreno:</span>
+        <br>
+        <br><span style="font-weight: 700;">Unidades Móveis de Sondagem em Contêiner:</span> Nossa solução exclusiva permite implantar canteiros completos de investigação em áreas remotas e de difícil acesso, típicas de traçados de linhas de transmissão, com&nbsp;agilidade, segurança e preservação ambiental. Garantimos a continuidade das operações independentemente das condições climáticas.
+      </p>
+    </section>
+    <section class="u-clearfix u-valign-middle-xl u-section-4" id="sec-b9a9">
+      <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-image u-section-5" id="sec-6168" data-image-width="1920" data-image-height="1441">
+      <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </section>
+    <section class="u-clearfix u-valign-middle-xl u-section-6" id="block-7">
+      <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout" style="">
+          <div class="u-layout-row" style="">
+            <div class="u-container-style u-layout-cell u-size-48 u-layout-cell-1">
+              <div class="u-container-layout u-container-layout-1">
+                <p class="u-text u-text-1"><span style="font-weight: 700;"></span><span style="font-weight: 700;">Experiência, Capacidade Técnica e Confiabilidade:</span>
+                  <br>
+                  <br><span style="font-weight: 700;">Competência Técnica Certificada:</span> Nossas operações seguem rigorosamente as Normas Brasileiras (ABNT) pertinentes e as&nbsp;Normas Regulamentadoras (NRs), com destaque para a NR-12 (Segurança em Máquinas). Estamos preparados para atender a requisitos específicos de órgãos reguladores e concessionárias.<br><span style="font-weight: 700;">Equipe Qualificada: </span>Contamos com engenheiros geotécnicos e geólogos experientes, capazes de interpretar dados complexos e oferecer recomendações práticas para otimização de projetos de fundações.<br><span style="font-weight: 700;">Tecnologia e Inovação: </span>Investimos continuamente em equipamentos de ponta e na formação de nossa equipe, assegurando a qualidade e a confiabilidade dos dados entregues.<br><span style="font-weight: 700;">Compromisso com Prazos e Resultados:</span> Nossa estrutura logística própria e planejamento detalhado garantem a mobilização ágil e a execução dentro dos cronogramas, críticos para o avanço das obras de transmissão.<br>
+                  <br><span style="font-weight: 700;">Diferenciais Estratégicos para o Setor Elétrico:</span>
+                  <br>
+                  <br><span style="font-weight: 700;">Foco na Solução do Problema de Fundação:</span> Vamos além da coleta de dados. Nossos relatórios interpretam a geotecnia para orientar as melhores decisões de projeto, visando&nbsp;segurança e economia.<br><span style="font-weight: 700;">Mobilidade e Resiliência Operacional:</span> Nossa praça de sondagem móvel elimina barreiras logísticas, assegurando que as investigações prossigam em qualquer localidade, mantendo o cronograma do projeto.<br><span style="font-weight: 700;">Conformidade e Segurança Integral:</span> Adotamos um Sistema de Gestão de Saúde e Segurança robusto, essencial para operar em canteiros de obra complexos e em coordenação com outras contratadas.<br><span style="font-weight: 700;">Parceria Técnica:</span> Atuamos como uma extensão da equipe de engenharia de nossos clientes, oferecendo suporte técnico desde a definição da malha de sondagens até a análise dos resultados.
+                </p>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-image u-layout-cell u-size-12 u-image-1" data-image-width="1080" data-image-height="1920">
+              <div class="u-container-layout u-container-layout-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-7" id="sec-0d96">
+      <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
+      <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
+                  <div class="u-container-layout u-container-layout-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                  <div class="u-container-layout u-container-layout-2"></div>
+                </div>
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-3">
+                  <div class="u-container-layout u-container-layout-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-2">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-4">
+                  <div class="u-container-layout u-container-layout-4"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-5">
+                  <div class="u-container-layout u-container-layout-5"></div>
+                </div>
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-6">
+                  <div class="u-container-layout u-container-layout-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-3">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-7">
+                  <div class="u-container-layout u-container-layout-7"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-8">
+                  <div class="u-container-layout u-container-layout-8"></div>
+                </div>
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-9">
+                  <div class="u-container-layout u-container-layout-9"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-4">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-10">
+                  <div class="u-container-layout u-container-layout-10"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-11">
+                  <div class="u-container-layout u-container-layout-11"></div>
+                </div>
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-12">
+                  <div class="u-container-layout u-container-layout-12"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-8" id="block-10">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-30">
+                <div class="u-layout-col">
+                  <div class="u-container-align-center u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="1920" data-image-height="864">
+                    <div class="u-container-layout u-container-layout-1"></div>
+                  </div>
+                  <div class="u-container-align-center u-container-style u-image u-layout-cell u-size-30 u-image-2" data-image-width="1920" data-image-height="1440">
+                    <div class="u-container-layout u-container-layout-2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-col">
+                  <div class="u-container-align-center u-container-style u-image u-layout-cell u-size-60 u-image-3" data-image-width="1080" data-image-height="1080">
+                    <div class="u-container-layout u-valign-top-xl u-container-layout-3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-9" id="sec-1b18">
+      <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
+      <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
+                  <div class="u-container-layout u-container-layout-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                  <div class="u-container-layout u-container-layout-2"></div>
+                </div>
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-3">
+                  <div class="u-container-layout u-container-layout-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-2">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-4">
+                  <div class="u-container-layout u-container-layout-4"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-5">
+                  <div class="u-container-layout u-container-layout-5"></div>
+                </div>
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-6">
+                  <div class="u-container-layout u-container-layout-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-3">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-7">
+                  <div class="u-container-layout u-container-layout-7"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-8">
+                  <div class="u-container-layout u-container-layout-8"></div>
+                </div>
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-9">
+                  <div class="u-container-layout u-container-layout-9"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-4">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-10">
+                  <div class="u-container-layout u-container-layout-10"></div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-col">
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-11">
+                  <div class="u-container-layout u-container-layout-11"></div>
+                </div>
+                <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-12">
+                  <div class="u-container-layout u-container-layout-12"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-10" id="sec-a700">
+      <p class="u-text u-text-1"><span style="font-weight: 700;"> Conclusão e Recomendações para Implementação:</span>
+        <br>A Support Solo Sondagens possui a&nbsp;base técnica, operacional e de segurança totalmente adequada&nbsp;para atuar com excelência no setor de transmissão de energia. O portfólio acima propõe uma&nbsp;reformulação estratégica da comunicação, traduzindo as competências existentes para a linguagem e as necessidades específicas do mercado elétrico.<br>
+        <br><span style="font-weight: 700;">Para implementar esta transformação, recomendo:</span>
+        <br>
+        <br><span style="font-weight: 700;">Revisar o site institucional:</span> para incluir uma seção dedicada ao “Setor Elétrico”, incorporando o conteúdo desenvolvido.<br><span style="font-weight: 700;">Desenvolver cases técnicos:</span> (mesmo que iniciais) que demonstrem a aplicação dos serviços em cenários análogos aos de transmissão.<br><span style="font-weight: 700;">Produzir conteúdo técnico:</span> (artigos, notas técnicas) sobre a importância da investigação geotécnica para fundações de torres, alinhando a marca ao setor.<br>
+        <br>Este portfólio posiciona a empresa não como uma simples executora de sondagens, mas como uma&nbsp;parceira especializada em geotecnia para infraestrutura crítica, apta a contribuir decisivamente para a segurança e eficiência do sistema elétrico nacional.
+      </p>
+    </section>
+    <section class="u-clearfix u-container-align-center u-image u-section-11" id="sec-696b" data-image-width="1920" data-image-height="1441">
+      <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </section>
+    
+    
+    
+    <footer class="u-clearfix u-footer u-shading u-footer" id="footer"><div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-top-bottom u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-row">
+            <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-shape-rectangle u-size-12 u-size-30-md u-layout-cell-1">
+              <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-container-layout-1"><!--position-->
+                <div data-position="" class="u-align-left u-expanded-width u-position u-position-1"><!--block-->
+                  <div class="u-block">
+                    <div class="u-block-container u-clearfix"><!--block_header-->
+                      <h5 class="u-align-center u-block-header u-text u-text-1" data-lang-pt="<!--block_header_content-->
+                ​<a href=&quot;116134660&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-1&quot; title=&quot;Missão Valores e Objetivos&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1831&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>MISSÃO, VALORES E OBJETIVOS</a><!--/block_header_content-->" data-lang-en="<!--block_header_content-->
+                ​<a href=&quot;116134660&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-1 u-block-control&quot; title=&quot;MISSION VALUES AND OBJECTIVES&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1831&quot;>MISSION, VALUES AND OBJECTIVES</a><!--/block_header_content-->" data-lang-es="<!--block_header_content-->
+                ​<a href=&quot;116134660&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-1&quot; title=&quot;MISIÓN, VALORES Y OBJETIVOS&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1831&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>MISIÓN, VALORES Y OBJETIVOS</a><!--/block_header_content-->"><!--block_header_content-->
+                        <a href="{{ route('pt.missao-valores-e-objetivos') }}" data-page-id="116134660" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-1" title="Missão Valores e Objetivos">MISSÃO, VALORES E OBJETIVOS</a><!--/block_header_content-->
+                      </h5><!--/block_header--><!--block_content-->
+                      <div class="u-block-content u-text" data-lang-pt="" data-lang-en="" data-lang-es=""><!--block_content_content--><!--/block_content_content--></div><!--/block_content-->
+                    </div>
+                  </div><!--/block-->
+                </div><!--/position--><!--position-->
+                <div data-position="" class="u-align-left u-expanded-width u-position u-position-2"><!--block-->
+                  <div class="u-block">
+                    <div class="u-block-container u-clearfix"><!--block_header-->
+                      <h5 class="u-align-center u-block-header u-text u-text-3" data-lang-pt="<!--block_header_content-->
+                ​<a href=&quot;397702623&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-2&quot; title=&quot;Código de Ética e Conduta&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1836&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​CÓDIGO DE ÉTICA E CONDUTA</a><!--/block_header_content-->" data-lang-en="<!--block_header_content-->
+                ​<a href=&quot;397702623&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-2 u-block-control&quot; title=&quot;CODE OF ETHICS AND CONDUCT&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1836&quot;>​CODE OF ETHICS AND CONDUCT</a><!--/block_header_content-->" data-lang-es="<!--block_header_content-->
+                ​<a href=&quot;397702623&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-2&quot; title=&quot;CÓDIGO DE ÉTICA Y CONDUCIÓN&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1836&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​CÓDIGO DE ÉTICA Y CONDUCIÓN</a><!--/block_header_content-->"><!--block_header_content-->
+                        <a href="{{ route('pt.codigo-de-etica-e-conduta') }}" data-page-id="397702623" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-2" title="Código de Ética e Conduta" data-lang-pt="{&quot;content&quot;:&quot;​CÓDIGO DE ÉTICA E CONDUTA&quot;,&quot;href&quot;:&quot;397702623&quot;}"> CÓDIGO DE ÉTICA E CONDUTA</a><!--/block_header_content-->
+                      </h5><!--/block_header--><!--block_content-->
+                      <div class="u-block-content u-text" data-lang-pt="" data-lang-en="" data-lang-es=""><!--block_content_content--><!--/block_content_content--></div><!--/block_content-->
+                    </div>
+                  </div><!--/block-->
+                </div><!--/position-->
+                <p class="u-align-center u-text u-text-palette-1-base u-text-5" data-lang-pt="​​<a href=&quot;267910123&quot; class=&quot;u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-3&quot; title=&quot;Plano de Segurança no Trabalho&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1839&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>PLANO DE SEGURANÇA NO TRABALHO</a>" data-lang-en="​​<a href=&quot;267910123&quot; class=&quot;u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-3 u-block-control&quot; title=&quot;WORK SAFETY PLAN&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1839&quot;>WORK SAFETY PLAN</a>" data-lang-es="​​<a href=&quot;267910123&quot; class=&quot;u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-3&quot; title=&quot;PLAN DE SEGURIDAD EN EL TRABAJO&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1839&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>PLAN DE SEGURIDAD EN EL TRABAJO</a>">
+                  <a href="{{ route('pt.plano-de-seguranca-do-trabalho') }}" data-page-id="267910123" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-3" title="Plano de Segurança no Trabalho">PLANO DE SEGURANÇA NO TRABALHO</a>
+                </p>
+                <p class="u-align-center u-text u-text-palette-1-base u-text-6" data-lang-pt="​​<a href=&quot;https://site.supportsondagens.com.br/plano-de-seguranca-no-trabalho/&quot; class=&quot;u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-4&quot; title=&quot;Intranet&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1841&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​INTRANET</a>" data-lang-en="​​<a href=&quot;https://site.supportsondagens.com.br/plano-de-seguranca-no-trabalho/&quot; class=&quot;u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-4 u-block-control&quot; title=&quot;INTRANET&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1841&quot;>​INTRANET</a>" data-lang-es="​​<a href=&quot;https://site.supportsondagens.com.br/plano-de-seguranca-no-trabalho/&quot; class=&quot;u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-4&quot; title=&quot;INTRANET&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1841&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​INTRANET</a>">
+                  <a href="{{ route('pt.intranet') }}" data-page-id="86632748" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-4" title="Intranet"> INTRANET</a>
+                </p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-align-center u-container-align-left u-container-style u-layout-cell u-shape-rectangle u-size-12 u-size-30-md u-layout-cell-2" title="">
+              <div class="u-container-layout u-valign-middle u-container-layout-2"><!--position-->
+                <div data-position="" class="u-align-center u-expanded-width u-position u-position-3"><!--block-->
+                  <div class="u-block u-indent-0">
+                    <div class="u-block-container u-clearfix"><!--block_header-->
+                      <h5 class="u-align-center u-block-header u-text u-text-7" data-lang-pt="<!--block_header_content-->
+                ​<a href=&quot;292807556&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-5&quot; title=&quot;Política de Gestão Ambiental&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1846&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLÍTICA DE GESTÃO AMBIENTAL</a><!--/block_header_content-->" data-lang-en="<!--block_header_content-->
+                ​<a href=&quot;292807556&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-5 u-block-control&quot; title=&quot;ENVIRONMENTAL MANAGEMENT POLICY&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1846&quot;>​ENVIRONMENTAL MANAGEMENT POLICY</a><!--/block_header_content-->" data-lang-es="<!--block_header_content-->
+                ​<a href=&quot;292807556&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-5&quot; title=&quot;POLÍTICA DE GESTIÓN AMBIENTAL&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1846&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLÍTICA DE GESTIÓN AMBIENTAL</a><!--/block_header_content-->"><!--block_header_content-->
+                        <a href="{{ route('pt.politica-de-gestao-ambiental') }}" data-page-id="292807556" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-5" title="Política de Gestão Ambiental"> POLÍTICA DE GESTÃO AMBIENTAL</a><!--/block_header_content-->
+                      </h5><!--/block_header--><!--block_content-->
+                      <div class="u-block-content u-text" data-lang-pt="" data-lang-en="" data-lang-es=""><!--block_content_content--><!--/block_content_content--></div><!--/block_content-->
+                    </div>
+                  </div><!--/block-->
+                </div><!--/position--><!--position-->
+                <div data-position="" class="u-align-center u-expanded-width u-position u-position-4"><!--block-->
+                  <div class="u-block">
+                    <div class="u-block-container u-clearfix"><!--block_header-->
+                      <h5 class="u-align-center u-block-header u-text u-text-9" data-lang-pt="<!--block_header_content-->
+                ​<a href=&quot;1863319022&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-6&quot; title=&quot;Política de Discriminação&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1851&quot; style=&quot;transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>POLÍTICA DE DISCRIMINAÇÃO</a><!--/block_header_content-->" data-lang-en="<!--block_header_content-->
+                ​<a href=&quot;1863319022&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-6 u-block-control&quot; title=&quot;DISCRIMINATION POLICY&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1851&quot;>DISCRIMINATION POLICY</a><!--/block_header_content-->" data-lang-es="<!--block_header_content-->
+                ​<a href=&quot;1863319022&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-6&quot; title=&quot;POLÍTICA DE DISCRIMINACIÓN&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1851&quot; style=&quot;transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>POLÍTICA DE DISCRIMINACIÓN</a><!--/block_header_content-->"><!--block_header_content-->
+                        <a href="{{ route('pt.politica-de-anti-assedio') }}" data-page-id="1863319022" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-6" title="Política de Discriminação">POLÍTICA DE DISCRIMINAÇÃO</a><!--/block_header_content-->
+                      </h5><!--/block_header--><!--block_content-->
+                      <div class="u-block-content u-text" data-lang-pt="" data-lang-en="" data-lang-es=""><!--block_content_content--><!--/block_content_content--></div><!--/block_content-->
+                    </div>
+                  </div><!--/block-->
+                </div><!--/position-->
+                <p class="u-align-center u-text u-text-palette-1-base u-text-11" data-lang-pt="​​<a href=&quot;159087844&quot; class=&quot;u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-none u-btn-7&quot; title=&quot;Política de Qualidade&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1854&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLÍTICA DE QUALIDADE</a>" data-lang-en="​​<a href=&quot;159087844&quot; class=&quot;u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-none u-btn-7 u-block-control&quot; title=&quot;Quality Policy&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1854&quot;>​QUALITY POLICY</a>" data-lang-es="​​<a href=&quot;159087844&quot; class=&quot;u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-none u-btn-7&quot; title=&quot;POLÍTICA DE CALIDAD&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1854&quot; style=&quot;transition-duration: 0.5s; text-transform: uppercase; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLÍTICA DE CALIDAD</a>">
+                  <a href="{{ route('pt.politica-de-qualidade') }}" data-page-id="159087844" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-btn-7" title="Política de Qualidade"> POLÍTICA DE QUALIDADE</a>
+                </p>
+                <p class="u-align-center u-text u-text-palette-1-base u-text-12" data-lang-pt="​​<a href=&quot;277809403&quot; class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-block-control u-none u-btn-8&quot; title=&quot;Política Assédio Moral e Sexual&quot; data-current-state=&quot;default&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;},&amp;quot;hover&amp;quot;:{}}&quot; data-block=&quot;1856&quot; style=&quot;transition-duration: 0.5s; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>POLÍTICA&amp;nbsp;ASSÉDIO MORAL E SEXUAL</a>" data-lang-en="​​<a href=&quot;277809403&quot; class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-8 u-block-control&quot; title=&quot;Moral and Sexual Harassment Policy&quot; data-current-state=&quot;default&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;},&amp;quot;hover&amp;quot;:{}}&quot; style=&quot;transition-duration: 0.5s; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1856&quot;>MORAL AND SEXUAL HARASSMENT POLICY</a>" data-lang-es="​​<a href=&quot;277809403&quot; class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-block-control u-none u-btn-8&quot; title=&quot;POLÍTICA DE ACOSO MORAL Y SEXUAL&quot; data-current-state=&quot;default&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;},&amp;quot;hover&amp;quot;:{}}&quot; data-block=&quot;1856&quot; style=&quot;transition-duration: 0.5s; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>POLÍTICA DE ACOSO MORAL Y SEXUAL</a>">
+                  <a href="{{ route('pt.politica-de-assedio-moral') }}" data-page-id="277809403" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-8" title="Política Assédio Moral e Sexual">POLÍTICA&nbsp;ASSÉDIO MORAL E SEXUAL</a>
+                </p>
+              </div>
+            </div>
+            <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-shape-rectangle u-size-12 u-size-30-md u-layout-cell-3">
+              <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-valign-top-xl u-valign-top-xxl u-container-layout-3"><!--position-->
+                <div data-position="" class="u-align-left u-expanded-width u-position u-position-5"><!--block-->
+                  <div class="u-block u-indent-0">
+                    <div class="u-block-container u-clearfix"><!--block_header-->
+                      <h5 class="u-align-center u-block-header u-text u-text-13" data-lang-pt="<!--block_header_content-->
+                ​<a href=&quot;5739878&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-9&quot; title=&quot;Política de Privacidade de Dados&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1861&quot; style=&quot;transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLÍTICA DE PRIVACIDADE DE DADOS</a><!--/block_header_content-->" data-lang-en="<!--block_header_content-->
+                ​<a href=&quot;5739878&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-9 u-block-control&quot; title=&quot;Data Privacy Policy&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1861&quot;>​DATA PRIVACY POLICY</a><!--/block_header_content-->" data-lang-es="<!--block_header_content-->
+                ​<a href=&quot;5739878&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-9&quot; title=&quot;POLÍTICA DE PRIVACIDAD DE DATOS&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1861&quot; style=&quot;transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLÍTICA DE PRIVACIDAD DE DATOS</a><!--/block_header_content-->"><!--block_header_content-->
+                        <a href="{{ route('pt.politica-de-dados') }}" data-page-id="5739878" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-9" title="Política de Privacidade de Dados"> POLÍTICA DE PRIVACIDADE DE DADOS</a><!--/block_header_content-->
+                      </h5><!--/block_header--><!--block_content-->
+                      <div class="u-block-content u-text" data-lang-pt="" data-lang-en="" data-lang-es=""><!--block_content_content--><!--/block_content_content--></div><!--/block_content-->
+                    </div>
+                  </div><!--/block-->
+                </div><!--/position--><!--position-->
+                <div data-position="" class="u-align-left u-expanded-width u-position u-position-6"><!--block-->
+                  <div class="u-block">
+                    <div class="u-block-container u-clearfix"><!--block_header-->
+                      <h5 class="u-align-center u-block-header u-text u-text-15" data-lang-pt="<!--block_header_content-->
+                ​<a href=&quot;47497839&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-10&quot; title=&quot;Política Anticorrupção&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1866&quot; style=&quot;text-transform: uppercase; transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLITICA ANTICORRPÇÃO</a><!--/block_header_content-->" data-lang-en="<!--block_header_content-->
+                ​<a href=&quot;47497839&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-10 u-block-control&quot; title=&quot;Anti-Corruption Policy&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;text-transform: uppercase; transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1866&quot;>​ANTI-CORRUPTION POLICY</a><!--/block_header_content-->" data-lang-es="<!--block_header_content-->
+                ​<a href=&quot;47497839&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-10&quot; title=&quot;POLÍTICA ANTICORRUPCIÓN&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1866&quot; style=&quot;text-transform: uppercase; transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLÍTICA ANTICORRUPCIÓN</a><!--/block_header_content-->"><!--block_header_content-->
+                        <a href="{{ route('pt.politica-anticorrupcao') }}" data-page-id="47497839" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-10" title="Política Anticorrupção" data-lang-pt="{&quot;content&quot;:&quot;​POLITICA ANTICORRPÇÃO&quot;,&quot;href&quot;:&quot;47497839&quot;}"> POLITICA ANTICORRPÇÃO</a><!--/block_header_content-->
+                      </h5><!--/block_header--><!--block_content-->
+                      <div class="u-block-content u-text" data-lang-pt="" data-lang-en="" data-lang-es=""><!--block_content_content--><!--/block_content_content--></div><!--/block_content-->
+                    </div>
+                  </div><!--/block-->
+                </div><!--/position--><!--position-->
+                <div data-position="" class="u-align-left u-expanded-width u-position u-position-7"><!--block-->
+                  <div class="u-block">
+                    <div class="u-block-container u-clearfix"><!--block_header-->
+                      <h5 class="u-align-center u-block-header u-text u-text-17" data-lang-pt="<!--block_header_content-->
+                ​<a href=&quot;47497839&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-10&quot; title=&quot;Política Anticorrupção&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1866&quot; style=&quot;text-transform: uppercase; transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLITICA ANTICORRPÇÃO</a><!--/block_header_content-->" data-lang-en="<!--block_header_content-->
+                ​<a href=&quot;47497839&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-10 u-block-control&quot; title=&quot;Anti-Corruption Policy&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;text-transform: uppercase; transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1866&quot;>​ANTI-CORRUPTION POLICY</a><!--/block_header_content-->" data-lang-es="<!--block_header_content-->
+                ​<a href=&quot;47497839&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-10&quot; title=&quot;POLÍTICA ANTICORRUPCIÓN&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1866&quot; style=&quot;text-transform: uppercase; transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLÍTICA ANTICORRUPCIÓN</a><!--/block_header_content-->"><!--block_header_content-->
+                        <a href="{{ route('pt.termo-de-servicos') }}" data-page-id="542422495" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-10" title="Política Anticorrupção" data-lang-pt="{&quot;content&quot;:&quot;TERMO DE SERVIÇO&quot;,&quot;href&quot;:&quot;47497839&quot;}">TERMO DE SERVIÇO</a><!--/block_header_content-->
+                      </h5><!--/block_header--><!--block_content-->
+                      <div class="u-block-content u-text" data-lang-pt="" data-lang-en="" data-lang-es=""><!--block_content_content--><!--/block_content_content--></div><!--/block_content-->
+                    </div>
+                  </div><!--/block-->
+                </div><!--/position--><!--position-->
+                <div data-position="" class="u-align-left u-expanded-width u-position u-position-8"><!--block-->
+                  <div class="u-block">
+                    <div class="u-block-container u-clearfix"><!--block_header-->
+                      <h5 class="u-align-center u-block-header u-text u-text-19" data-lang-pt="<!--block_header_content-->
+                ​<a href=&quot;47497839&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-10&quot; title=&quot;Política Anticorrupção&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1866&quot; style=&quot;text-transform: uppercase; transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLITICA ANTICORRPÇÃO</a><!--/block_header_content-->" data-lang-en="<!--block_header_content-->
+                ​<a href=&quot;47497839&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-text-palette-1-base u-none u-btn-10 u-block-control&quot; title=&quot;Anti-Corruption Policy&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; style=&quot;text-transform: uppercase; transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot; data-block=&quot;1866&quot;>​ANTI-CORRUPTION POLICY</a><!--/block_header_content-->" data-lang-es="<!--block_header_content-->
+                ​<a href=&quot;47497839&quot; class=&quot;awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-text-active-black u-text-hover-black u-block-control u-text-palette-1-base u-none u-btn-10&quot; title=&quot;POLÍTICA ANTICORRUPCIÓN&quot; data-css=&quot;{&amp;quot;default&amp;quot;:{&amp;quot;color&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;background-image&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;gradient&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;transform&amp;quot;:&amp;quot;rotate(0deg) scale(1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;palette-1-base&amp;quot;},&amp;quot;hover&amp;quot;:{&amp;quot;transform&amp;quot;:&amp;quot;scale(1.1) translateX(0px) translateY(0px)&amp;quot;,&amp;quot;shadow&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border-radius&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;border&amp;quot;:0,&amp;quot;border-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-color&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;text-shadow&amp;quot;:&amp;quot;&amp;quot;}}&quot; data-current-state=&quot;default&quot; data-hover-preset-name=&quot;scale&quot; data-block=&quot;1866&quot; style=&quot;text-transform: uppercase; transition-duration: 0.5s; transform: rotate(0deg) scale(1) translateX(0px) translateY(0px); padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px&quot;>​POLÍTICA ANTICORRUPCIÓN</a><!--/block_header_content-->"><!--block_header_content-->
+                        <a href="/blog/blog.html" data-page-id="188244468" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-10" title="Política Anticorrupção" data-lang-pt="{&quot;content&quot;:&quot;BLOG - SUPPORT&amp;nbsp;&quot;,&quot;href&quot;:&quot;47497839&quot;}">BLOG - SUPPORT&nbsp;</a><!--/block_header_content-->
+                      </h5><!--/block_header--><!--block_content-->
+                      <div class="u-block-content u-text" data-lang-pt="" data-lang-en="" data-lang-es=""><!--block_content_content--><!--/block_content_content--></div><!--/block_content-->
+                    </div>
+                  </div><!--/block-->
+                </div><!--/position-->
+              </div>
+            </div>
+            <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-shape-rectangle u-size-12 u-size-30-md u-layout-cell-4">
+              <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-4">
+                <div class="u-align-center u-shortcode u-shortcode-1">
+                  <center>
+                    <a href="http://discovery.ariba.com/profile/AN11059876701">
+                      <img alt="Exibir perfil do(a) Support Solo Sondagens LTDA no Ariba Discovery" border="0" src="https://service.ariba.com/an/p/Ariba/pt_BR/badge_180x55.jpg">
+                    </a>
+                  </center>
+                </div>
+                <div class="u-shortcode u-shortcode-2">
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+                  <a href="https://api.whatsapp.com/send?phone=5562991906100&amp;text=Oi,+estou+no+site+de+voc%C3%AAs+e+gostaria+de+mais+informa%C3%A7%C3%B5es." style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888; z-index:1000;" target="_blank"><i style="margin-top:16px" class="fa fa-whatsapp"></i>
+                  </a>
+                </div><!--position-->
+                <div data-position="" class="u-position u-position-9"><!--block-->
+                  <div class="u-block">
+                    <div class="u-block-container u-clearfix"></div>
+                  </div><!--/block-->
+                </div><!--/position-->
+              </div>
+            </div>
+            <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-shape-rectangle u-size-12 u-size-60-md u-layout-cell-5">
+              <div class="u-container-layout u-valign-middle-xl u-valign-top-lg u-valign-top-sm u-container-layout-5">
+                <a href="#" class="u-align-center u-image u-logo u-image-1" data-image-width="500" data-image-height="500" data-lang-pt="#" data-lang-en="#" data-lang-es="#">
+                  <img src="{{ asset('images/9.png') }}" class="u-logo-image u-logo-image-1">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><p class="u-align-center u-text u-text-21" data-lang-pt="​© Copyright 2015 - 2026 SUᕈᕈORΓ SOLO E SOṈDΔGEṈS. Todos os direitos reservados" data-lang-en="​ Copyright 2015 - 2026 SURO SOLO AND SONDAGE. All rights reserved" data-lang-es="​DERECHOS DE AUTOR 2015 - 2026 SUᕈᕈORΓ SOLO E SOṈDΔGEṈS. TODOS LOS DERECHOS RESERVADOS"> © Copyright 2015 - 2026 SUᕈᕈORΓ SOLO E SOṈDΔGEṈS. Todos os direitos reservados</p><div class="u-social-icons u-social-icons-1">
+        <a class="u-social-url" target="_blank" data-type="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/support-solo-sondagens-688ba8216/"><span class="u-icon u-social-icon u-social-linkedin u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-8d3b"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-8d3b"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+      C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
+      H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg></span>
+        </a>
+        <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/support_solo_sondagens/"><span class="u-icon u-social-icon u-social-instagram u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-af8a"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-af8a"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+      z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+      C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+      c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+        </a>
+        <a class="u-social-url" target="_blank" data-type="YouTube" title="YouTube" href="https://www.youtube.com/channel/UCHSbQ4322n97YDRxemGcWRw"><span class="u-icon u-social-icon u-social-youtube u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-237e"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-237e"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M74.9,33.3H37.3c-7.4,0-13.4,6-13.4,13.4v18.8c0,7.4,6,13.4,13.4,13.4h37.6c7.4,0,13.4-6,13.4-13.4V46.7 C88.3,39.3,82.3,33.3,74.9,33.3L74.9,33.3z M65.9,57l-17.6,8.4c-0.5,0.2-1-0.1-1-0.6V47.5c0-0.5,0.6-0.9,1-0.6l17.6,8.9 C66.4,56,66.4,56.8,65.9,57L65.9,57z"></path></svg></span>
+        </a>
+        <a class="u-social-url" title="facebook" target="_blank" href=""><span class="u-icon u-social-facebook u-social-icon u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-0094"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-0094"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+      c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
+        </a>
+        <a class="u-social-url" target="_blank" data-type="Email" title="Email" href="mailto:contato@supportsondagens.com.br?subject=Bot%C3%A3o%20Rodap%C3%A9"><span class="u-icon u-social-email u-social-icon u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-21fa"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-21fa"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path id="path3864" fill="#FFFFFF" d="M27.2,28h57.6c4,0,7.2,3.2,7.2,7.2l0,0v42.7c0,3.9-3.2,7.2-7.2,7.2l0,0H27.2
+	c-4,0-7.2-3.2-7.2-7.2V35.2C20,31.1,23.2,28,27.2,28 M56,52.9l28.8-17.8H27.2L56,52.9 M27.2,77.7h57.6V43.5L56,61.3L27.2,43.5V77.7z
+	"></path></svg></span>
+        </a>
+        <a class="u-social-url" target="_blank" data-type="Whatsapp" title="Whatsapp" href="https://wa.me/5562991906100"><span class="u-icon u-social-icon u-social-whatsapp u-icon-6"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-2000"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-2000"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,28.3C77.2,21.7,68.4,18,59,18c-19.3,0-35.1,15.7-35.1,35.1c0,6.2,1.6,12.2,4.7,17.5l-5,18.2L42.2,84
+	c5.1,2.8,10.9,4.3,16.8,4.3h0l0,0c19.3,0,35.1-15.7,35.1-35.1C94.1,43.8,90.5,35,83.8,28.3 M59,82.3L59,82.3
+	c-5.2,0-10.4-1.4-14.9-4.1l-1.1-0.6l-11,2.9L35,69.8l-0.7-1.1c-2.9-4.6-4.5-10-4.5-15.5C29.8,37,42.9,24,59,24
+	c7.8,0,15.1,3,20.6,8.6c5.5,5.5,8.5,12.8,8.5,20.6C88.2,69.2,75.1,82.3,59,82.3 M75,60.5c-0.9-0.4-5.2-2.6-6-2.9
+	c-0.8-0.3-1.4-0.4-2,0.4s-2.3,2.9-2.8,3.4c-0.5,0.6-1,0.7-1.9,0.2c-0.9-0.4-3.7-1.4-7.1-4.4c-2.6-2.3-4.4-5.2-4.9-6.1
+	c-0.5-0.9-0.1-1.4,0.4-1.8c0.4-0.4,0.9-1,1.3-1.5c0.4-0.5,0.6-0.9,0.9-1.5c0.3-0.6,0.1-1.1-0.1-1.5c-0.2-0.4-2-4.8-2.7-6.5
+	c-0.7-1.7-1.4-1.5-2-1.5c-0.5,0-1.1,0-1.7,0c-0.6,0-1.5,0.2-2.3,1.1c-0.8,0.9-3.1,3-3.1,7.3c0,4.3,3.1,8.5,3.6,9.1
+	c0.4,0.6,6.2,9.4,15,13.2c2.1,0.9,3.7,1.4,5,1.8c2.1,0.7,4,0.6,5.5,0.3c1.7-0.3,5.2-2.1,5.9-4.2c0.7-2,0.7-3.8,0.5-4.2
+	C76.5,61.1,75.9,60.9,75,60.5"></path></svg></span>
+        </a>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80"></section><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 140px; bottom: 120px; padding: 15px;" class="u-back-to-top u-icon u-icon-rounded u-opacity u-opacity-90 u-palette-1-base" data-href="#"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg><svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg></span>
+  
+
+@endsection
+
+@push('scripts')
+    <script class="u-script" type="text/javascript" src="{{ asset('js/jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ asset('js/nicepage.js') }}" defer=""></script>
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site1",
+		"logo": "/images/9.png",
+		"sameAs": [
+				"https://www.linkedin.com/in/support-solo-sondagens-688ba8216/",
+				"https://www.instagram.com/support_solo_sondagens/",
+				"https://www.youtube.com/channel/UCHSbQ4322n97YDRxemGcWRw",
+				"mailto:contato@supportsondagens.com.br?subject=Bot%C3%A3o%20Rodap%C3%A9",
+				"https://wa.me/5562991906100"
+		]
+}</script>
+@endpush
