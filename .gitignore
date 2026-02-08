@@ -17,3 +17,10 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# Nicepage conversion scripts (temporary)
+/convert-nicepage.php
+/convert-nicepage-blade.py
+/batch-convert-nicepage.sh
+/generate-routes.php
+/replace-navigation-links.py

@@ -97,7 +97,7 @@
                 }</style>
         </nav>
         <div class="u-language u-language-content-icon-text u-language-layout-icons u-spacing-10 u-language-1">
-          <a class="u-language-top-url u-language-url u-text-black" data-lang-text="Português" href="/Portfólio-Serviços-Transmissão.html" data-language="pt" style="background-image: none; text-transform: uppercase; font-size: 0.75rem;"><span class="u-file-icon u-icon u-language-icon u-language-pt u-icon-1"><img src="{{ asset('images/icone18.png') }}" alt=""></span>
+          <a class="u-language-top-url u-language-url u-text-black" data-lang-text="Português" href="{{ route('en.portfolio-servicos-transmissao') }}" data-language="pt" style="background-image: none; text-transform: uppercase; font-size: 0.75rem;"><span class="u-file-icon u-icon u-language-icon u-language-pt u-icon-1"><img src="{{ asset('images/icone18.png') }}" alt=""></span>
           </a>
           <a class="u-language-top-url u-language-url u-text-black" data-lang-text="English" href="/en/Portfólio-Serviços-Transmissão.html" data-language="en" style="background-image: none; text-transform: uppercase; font-size: 0.75rem;"><span class="u-file-icon u-icon u-language-en u-language-icon u-icon-2"><img src="{{ asset('images/icone19.png') }}" alt=""></span>
           </a>
