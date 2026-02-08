@@ -6,6 +6,9 @@ use App\Http\Controllers\Admin\PortfolioController;
 use App\Http\Controllers\Admin\InstagramController;
 use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\TermsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,26 +21,87 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-// Include Nicepage routes (auto-generated from HTML files)
-require __DIR__ . '/nicepage.php';
+// Frontend Routes - Root redirects to Portuguese
+Route::get('/', function () {
+    return redirect('/pt/home');
+});
 
-// Original Frontend Routes (commented out as replaced by Nicepage)
-// Route::get('/', function () {
-//     return view('home');
-// });
+// Portuguese Routes (Português)
+Route::prefix('pt')->name('pt.')->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/denuncia', [ReportController::class, 'index'])->name('denuncia');
+    Route::post('/denuncia', [ReportController::class, 'store'])->name('denuncia.store');
+    Route::get('/termos', [TermsController::class, 'index'])->name('termos');
+    
+    // Legacy routes compatibility
+    Route::get('/servicos', function () {
+        $services = \App\Models\Service::where('is_active', true)->paginate(12);
+        return view('services.index', compact('services'));
+    })->name('servicos');
+    
+    Route::get('/portfolio', function () {
+        $portfolios = \App\Models\Portfolio::where('is_active', true)->paginate(12);
+        return view('portfolio.index', compact('portfolios'));
+    })->name('portfolio');
+    
+    Route::get('/contato', [ContactController::class, 'show'])->name('contato');
+    Route::post('/contato', [ContactController::class, 'store'])->name('contato.store');
+});
 
+// English Routes (English)
+Route::prefix('en')->name('en.')->group(function () {
+    Route::get('/home', [HomeController::class, 'indexEn'])->name('home');
+    Route::get('/report', [ReportController::class, 'indexEn'])->name('report');
+    Route::post('/report', [ReportController::class, 'store'])->name('report.store');
+    Route::get('/terms', [TermsController::class, 'indexEn'])->name('terms');
+    
+    Route::get('/services', function () {
+        $services = \App\Models\Service::where('is_active', true)->paginate(12);
+        return view('services.index', compact('services'));
+    })->name('services');
+    
+    Route::get('/portfolio', function () {
+        $portfolios = \App\Models\Portfolio::where('is_active', true)->paginate(12);
+        return view('portfolio.index', compact('portfolios'));
+    })->name('portfolio');
+    
+    Route::get('/contact', [ContactController::class, 'show'])->name('contact');
+    Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+});
+
+// Spanish Routes (Español)
+Route::prefix('es')->name('es.')->group(function () {
+    Route::get('/home', [HomeController::class, 'indexEs'])->name('home');
+    Route::get('/denuncia', [ReportController::class, 'indexEs'])->name('denuncia');
+    Route::post('/denuncia', [ReportController::class, 'store'])->name('denuncia.store');
+    Route::get('/terminos', [TermsController::class, 'indexEs'])->name('terminos');
+    
+    Route::get('/servicios', function () {
+        $services = \App\Models\Service::where('is_active', true)->paginate(12);
+        return view('services.index', compact('services'));
+    })->name('servicios');
+    
+    Route::get('/portfolio', function () {
+        $portfolios = \App\Models\Portfolio::where('is_active', true)->paginate(12);
+        return view('portfolio.index', compact('portfolios'));
+    })->name('portfolio');
+    
+    Route::get('/contacto', [ContactController::class, 'show'])->name('contacto');
+    Route::post('/contacto', [ContactController::class, 'store'])->name('contacto.store');
+});
+
+// Legacy compatibility routes (redirect to Portuguese)
 Route::get('/servicos', function () {
-    $services = \App\Models\Service::where('is_active', true)->paginate(12);
-    return view('services.index', compact('services'));
-})->name('services.index');
+    return redirect()->route('pt.servicos');
+});
 
 Route::get('/portfolio', function () {
-    $portfolios = \App\Models\Portfolio::where('is_active', true)->paginate(12);
-    return view('portfolio.index', compact('portfolios'));
-})->name('portfolio.index');
+    return redirect()->route('pt.portfolio');
+});
 
-Route::get('/contato', [ContactController::class, 'show'])->name('contact.show');
-Route::post('/contato', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/contato', function () {
+    return redirect()->route('pt.contato');
+});
 
 // Admin Routes
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
