@@ -33,42 +33,42 @@
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
                         <img class="u-expanded-width u-image u-image-contain u-image-1" src="{{ asset('images/pngtree-heavy-duty-drilling-rig-machine-png-image_175540831.webp') }}" data-image-width="540" data-image-height="360" title="Sondagem Rotopercussiva">
                         <h4 class="u-text u-text-palette-1-base u-text-2">SONDAGEM ROTOPERCUSSIVA</h4>
-                        <a href="{{ route('services.drilling.rotopercussive', ['locale' => 'pt']) }}" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-1" title="Sondagem Rotopercussivas">mais</a>
+                        <a href="#" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-1" title="Sondagem Rotopercussivas">mais</a>
                     </div>
                 </div>
                 <div class="u-align-center u-container-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-2">
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
                         <img class="u-expanded-width u-image u-image-contain u-image-2" src="{{ asset('images/Icone08.png') }}" data-image-width="2500" data-image-height="2500" title="Elaboração de Projetos de Engenharia">
                         <h4 class="u-text u-text-palette-1-base u-text-3">ELABORAÇÃO DE PROJETOS DE ENGENHARIA&nbsp;</h4>
-                        <a href="{{ route('services.project-development', ['locale' => 'pt']) }}" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-2" title="Serviços Elaboração Projetos">Mais</a>
+                        <a href="#" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-2" title="Serviços Elaboração Projetos">Mais</a>
                     </div>
                 </div>
                 <div class="u-align-center u-container-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-3">
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
                         <img class="u-expanded-width u-image u-image-contain u-image-3" src="{{ asset('images/pngtree-soil-layers-cross-section-with-vibrant-plant-growth-healthy-earth-3d-png-image_17575375.webp') }}" data-image-width="640" data-image-height="640" title="Sondagem Manual">
                         <h4 class="u-text u-text-palette-1-base u-text-4">SONDAGEM&nbsp;<br>MANUAL</h4>
-                        <a href="{{ route('services.drilling.manual', ['locale' => 'pt']) }}" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-3" title="Sondagem Manual"><span class="u-icon"></span>&nbsp;mais</a>
+                        <a href="#" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-3" title="Sondagem Manual"><span class="u-icon"></span>&nbsp;mais</a>
                     </div>
                 </div>
                 <div class="u-align-center u-container-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-4">
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
                         <img class="u-expanded-width u-image u-image-contain u-image-4" src="{{ asset('images/pngtree-a-realistic-scientific-lab-microscope-png-image_15161513.png') }}" data-image-width="360" data-image-height="360" title="Laboratorio de Ensaios em Solo">
                         <h4 class="u-text u-text-palette-1-base u-text-5">LABORATORIO DE ENSAIOS EM SOLO&nbsp;</h4>
-                        <a href="{{ route('services.laboratory', ['locale' => 'pt']) }}" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-4" title="Serviços Laboratorial">mais</a>
+                        <a href="#" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-4" title="Serviços Laboratorial">mais</a>
                     </div>
                 </div>
                 <div class="u-align-center u-container-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-5">
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
                         <img class="u-expanded-width u-image u-image-contain u-image-5" src="{{ asset('images/pngtree-3d-illustration-of-pile-rocks-on-transparent-background-png-image_13042781.png') }}" data-image-width="360" data-image-height="360" title="Sondagens Com Sondas Especiais ">
                         <h4 class="u-text u-text-palette-1-base u-text-6">SONDAGENS COM SONDAS ESPECIAIS&nbsp;</h4>
-                        <a href="{{ route('services.special-drilling', ['locale' => 'pt']) }}" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-5" title="Sondagem Sondas Especiais">mais</a>
+                        <a href="#" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-5" title="Sondagem Sondas Especiais">mais</a>
                     </div>
                 </div>
                 <div class="u-align-center u-container-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-6">
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-6">
                         <img class="u-expanded-width u-image u-image-contain u-image-6" src="{{ asset('images/pngtree-d-model-of-a-steel-transmission-tower-with-power-lines-on-png-image_15054625.png') }}" data-image-width="360" data-image-height="360" title="Ensaios Especiais Elétricos">
                         <h4 class="u-text u-text-palette-1-base u-text-7">ENSAIOS ESPECIAIS ELÉTRICOS</h4>
-                        <a href="{{ route('services.electrical-tests', ['locale' => 'pt']) }}" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-6" title="Ensaios Especiais Elétricos">mais</a>
+                        <a href="#" class="u-active-palette-1-light-1 u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-text-active-white u-text-hover-white u-btn-6" title="Ensaios Especiais Elétricos">mais</a>
                     </div>
                 </div>
             </div>
@@ -188,7 +188,7 @@
                         <h2 class="u-align-left u-text u-text-1">Contate-nos</h2>
                         <p class="u-align-left u-text u-text-2">Você é sempre bem-vindo para entrar em contato conosco. Nosso atendimento ao cliente está disponível de segunda a sexta, das 9h00 às 19h00. e sábado a domingo, das 10h00 às 14h00. (GMT +3). Estamos ansiosos para ouvir de você!</p>
                         <div class="u-expanded-width u-form u-form-1">
-                            <form action="{{ route('contact.submit', ['locale' => 'pt']) }}" method="POST" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px;">
+                            <form action="{{ route('pt.contato.store') }}" method="POST" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px;">
                                 @csrf
                                 <div class="u-form-group u-form-name u-label-none">
                                     <label class="u-label">Nome</label>

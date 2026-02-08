@@ -8,7 +8,7 @@
                             <div class="u-block">
                                 <div class="u-block-container u-clearfix">
                                     <h5 class="u-align-center u-block-header u-text u-text-1">
-                                        <a href="{{ route('about.mission', ['locale' => app()->getLocale()]) }}" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-1">MISSÃO, VALORES E OBJETIVOS</a>
+                                        <a href="#" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-1">MISSÃO, VALORES E OBJETIVOS</a>
                                     </h5>
                                 </div>
                             </div>
@@ -17,16 +17,16 @@
                             <div class="u-block">
                                 <div class="u-block-container u-clearfix">
                                     <h5 class="u-align-center u-block-header u-text u-text-3">
-                                        <a href="{{ route('about.ethics', ['locale' => app()->getLocale()]) }}" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-2">CÓDIGO DE ÉTICA E CONDUTA</a>
+                                        <a href="#" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-2">CÓDIGO DE ÉTICA E CONDUTA</a>
                                     </h5>
                                 </div>
                             </div>
                         </div>
                         <p class="u-align-center u-text u-text-palette-1-base u-text-5">
-                            <a href="{{ route('about.safety', ['locale' => app()->getLocale()]) }}" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-3">PLANO DE SEGURANÇA NO TRABALHO</a>
+                            <a href="#" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-3">PLANO DE SEGURANÇA NO TRABALHO</a>
                         </p>
                         <p class="u-align-center u-text u-text-palette-1-base u-text-6">
-                            <a href="{{ route('intranet', ['locale' => app()->getLocale()]) }}" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-4">INTRANET</a>
+                            <a href="#" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-4">INTRANET</a>
                         </p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                             <div class="u-block u-indent-0">
                                 <div class="u-block-container u-clearfix">
                                     <h5 class="u-align-center u-block-header u-text u-text-7">
-                                        <a href="{{ route('policies.environmental', ['locale' => app()->getLocale()]) }}" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-5">POLÍTICA DE GESTÃO AMBIENTAL</a>
+                                        <a href="#" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-5">POLÍTICA DE GESTÃO AMBIENTAL</a>
                                     </h5>
                                 </div>
                             </div>
@@ -45,16 +45,16 @@
                             <div class="u-block">
                                 <div class="u-block-container u-clearfix">
                                     <h5 class="u-align-center u-block-header u-text u-text-9">
-                                        <a href="{{ route('policies.anti-harassment', ['locale' => app()->getLocale()]) }}" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-6">POLÍTICA DE DISCRIMINAÇÃO</a>
+                                        <a href="#" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-6">POLÍTICA DE DISCRIMINAÇÃO</a>
                                     </h5>
                                 </div>
                             </div>
                         </div>
                         <p class="u-align-center u-text u-text-palette-1-base u-text-11">
-                            <a href="{{ route('policies.quality', ['locale' => app()->getLocale()]) }}" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-7">POLÍTICA DE QUALIDADE</a>
+                            <a href="#" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-7">POLÍTICA DE QUALIDADE</a>
                         </p>
                         <p class="u-align-center u-text u-text-palette-1-base u-text-13">
-                            <a href="{{ route('policies.moral-harassment', ['locale' => app()->getLocale()]) }}" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-8">POLÍTICA DE ASSÉDIO MORAL</a>
+                            <a href="#" class="u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-8">POLÍTICA DE ASSÉDIO MORAL</a>
                         </p>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                             <div class="u-block">
                                 <div class="u-block-container u-clearfix">
                                     <h5 class="u-align-center u-block-header u-text u-text-13">
-                                        <a href="{{ route('policies.data-privacy', ['locale' => app()->getLocale()]) }}" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-9">POLÍTICA DE PRIVACIDADE DE DADOS</a>
+                                        <a href="#" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-9">POLÍTICA DE PRIVACIDADE DE DADOS</a>
                                     </h5>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                             <div class="u-block">
                                 <div class="u-block-container u-clearfix">
                                     <h5 class="u-align-center u-block-header u-text u-text-15">
-                                        <a href="{{ route('policies.anti-corruption', ['locale' => app()->getLocale()]) }}" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-10">POLITICA ANTICORRPÇÃO</a>
+                                        <a href="#" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-10">POLITICA ANTICORRPÇÃO</a>
                                     </h5>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                             <div class="u-block">
                                 <div class="u-block-container u-clearfix">
                                     <h5 class="u-align-center u-block-header u-text u-text-17">
-                                        <a href="{{ route('terms', ['locale' => app()->getLocale()]) }}" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-10">TERMO DE SERVIÇO</a>
+                                        <a href="#" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-10">TERMO DE SERVIÇO</a>
                                     </h5>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                             <div class="u-block">
                                 <div class="u-block-container u-clearfix">
                                     <h5 class="u-align-center u-block-header u-text u-text-19">
-                                        <a href="{{ route('blog', ['locale' => app()->getLocale()]) }}" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-10">BLOG - SUPPORT </a>
+                                        <a href="#" class="awb-custom-text-color awb-custom-text-hover-color u-active-none u-border-0 u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-active-black u-text-hover-black u-text-palette-1-base u-btn-10">BLOG - SUPPORT </a>
                                     </h5>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-shape-rectangle u-size-12 u-size-60-md u-layout-cell-5">
                     <div class="u-container-layout u-valign-middle-xl u-valign-top-lg u-valign-top-sm u-container-layout-5">
-                        <a href="{{ route('home', ['locale' => app()->getLocale()]) }}" class="u-align-center u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
+                        <a href="#" class="u-align-center u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
                             <img src="{{ asset('images/9.png') }}" class="u-logo-image u-logo-image-1">
                         </a>
                     </div>
