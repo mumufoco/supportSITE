@@ -18,10 +18,13 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-// Frontend Routes
-Route::get('/', function () {
-    return view('home');
-});
+// Include Nicepage routes (auto-generated from HTML files)
+require __DIR__ . '/nicepage.php';
+
+// Original Frontend Routes (commented out as replaced by Nicepage)
+// Route::get('/', function () {
+//     return view('home');
+// });
 
 Route::get('/servicos', function () {
     $services = \App\Models\Service::where('is_active', true)->paginate(12);
